@@ -24,8 +24,9 @@ header {
 }
 
 .logo {
-  font-size: 120%;
-}
+  font-size: 120%; 
+  
+} 
 
 .nav-bar {
   display: flex;
