@@ -156,17 +156,8 @@ main {
   flex-wrap: wrap;
 }
 
-/* Varannan sektion speglas */
 .info-section:nth-child(even) {
   flex-direction: row-reverse;
-}
-
-.big-rect {
-  width: 280px;
-  height: 280px;
-  background-color: #1e1e1e;
-  border: 1px solid #2e2e2e;
-  flex-shrink: 0;
 }
 
 .info-text h2 {
@@ -250,11 +241,6 @@ footer p {
   .info-section:nth-child(even) {
     flex-direction: column;
   }
-
-  .big-rect {
-    width: 60%;
-    height: 300px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -274,10 +260,5 @@ footer p {
   .top-boxes {
     flex-direction: column;
     align-items: center;
-  }
-
-  .big-rect {
-    width: 90%;
-    height: 250px;
   }
 }
