@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #141414;
   color: #e8e8e8;
+  overflow-x: hidden;
 }
 
 header {
@@ -45,25 +46,27 @@ header {
 .container {
   display: grid;
   grid-template-columns: 5% 90% 5%;
-  min-height: 100vh;
-}
-
-.sidebar-left,
-.sidebar-right {
-  background-color: #0f0f0f;
+  width: 100%;
 }
 
 .sidebar-left {
+  background-color: #0f0f0f;
   border-right: 1px solid #2e2e2e;
 }
 
 .sidebar-right {
+  background-color: #0f0f0f;
   border-left: 1px solid #2e2e2e;
+}
+
+main {
+  background-color: #141414;
+  min-width: 0;
 }
 
 .top-section {
   text-align: center;
-  padding: 5% 5%;
+  padding: 5%;
   border-bottom: 1px solid #2e2e2e;
   margin-bottom: 40px;
 }
@@ -86,10 +89,8 @@ header {
 }
 
 .square {
-  width: 15vw;
-  height: 15vw;
-  min-width: 120px;
-  min-height: 120px;
+  width: 150px;
+  height: 150px;
   background-color: #1e1e1e;
   border: 1px solid #2e2e2e;
   display: flex;
@@ -104,7 +105,7 @@ header {
 }
 
 .top-item p {
-  margin-top: 2%;
+  margin-top: 8px;
   font-size: 90%;
 }
 
@@ -112,22 +113,17 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0 4%;
-  margin-top: 30px;
+  gap: 20px;
+  padding: 0 5%;
   margin-bottom: 40px;
 }
 
 .product {
   background-color: #1e1e1e;
   border: 1px solid #2e2e2e;
-  width: 22%;
-  min-width: 200px;
-  padding: 3%;
+  width: 200px;
+  padding: 15px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 .product img {
@@ -145,58 +141,55 @@ header {
   font-size: 90%;
 }
 
+.product:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
 .info-section {
   display: flex;
   align-items: center;
   gap: 5%;
   padding: 5%;
   border-bottom: 1px solid #2e2e2e;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
+/* Varannan sektion speglas */
 .info-section:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 .big-rect {
-  width: 25vw;
-  height: 25vw;
-  min-width: 200px;
-  min-height: 200px;
+  width: 280px;
+  height: 280px;
   background-color: #1e1e1e;
   border: 1px solid #2e2e2e;
+  flex-shrink: 0;
 }
 
 .info-text h2 {
   font-size: 150%;
+  margin-bottom: 10px;
 }
 
 .info-text p {
   font-size: 100%;
-}
-
-footer {
-  background-color: #0f0f0f;
-  border-top: 1px solid #2e2e2e;
-  padding: 3% 5%;
-  text-align: center;
+  color: #888;
 }
 
 .tillbehor-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0 4%;
-  margin-top: 30px;
+  gap: 20px;
+  padding: 0 5%;
   margin-bottom: 40px;
 }
 
 .tillbehor-item {
-  width: 22%;
-  min-width: 200px;
-  padding: 3%;
+  width: 200px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .tillbehor-square {
@@ -214,26 +207,36 @@ footer {
 
 .tillbehor-item h3 {
   font-size: 110%;
+  margin-top: 8px;
 }
 
 .tillbehor-item p {
   font-size: 90%;
+  color: #888;
 }
 
-.product:hover {
-  transform: scale(1.03);
-  transition: 0.2s;
+footer {
+  background-color: #0f0f0f;
+  border-top: 1px solid #2e2e2e;
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.footer-brand {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #888;
 }
 
 @media (max-width: 1024px) {
-  .product,
-  .tillbehor-item {
-    width: 45%;
-  }
-
   .info-section {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .info-section:nth-child(even) {
@@ -242,7 +245,7 @@ footer {
 
   .big-rect {
     width: 60%;
-    height: 60vw;
+    height: 300px;
   }
 }
 
@@ -265,18 +268,8 @@ footer {
     align-items: center;
   }
 
-  .square {
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .product,
-  .tillbehor-item {
-    width: 100%;
-  }
-
   .big-rect {
-    width: 80%;
-    height: 80vw;
+    width: 90%;
+    height: 250px;
   }
 }
