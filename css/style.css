@@ -213,7 +213,7 @@ footer p {
 .tillbehor-boxes {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 10%;
     justify-content: flex-start;
 }
 
