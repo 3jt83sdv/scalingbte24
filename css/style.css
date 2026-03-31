@@ -10,7 +10,6 @@ body {
   color: #e8e8e8;
 }
 
-/* HEADER */
 header {
   background-color: #0f0f0f;
   border-bottom: 1px solid #2e2e2e;
@@ -43,7 +42,6 @@ header {
   color: #e8e8e8;
 }
 
-/* CONTAINER */
 .container {
   display: grid;
   grid-template-columns: 5% 90% 5%;
@@ -63,7 +61,6 @@ header {
   border-left: 1px solid #2e2e2e;
 }
 
-/* TOP SECTION */
 .top-section {
   text-align: center;
   padding: 5% 5%;
@@ -75,7 +72,6 @@ header {
   margin-bottom: 5%;
 }
 
-/* BOXES */
 .top-boxes {
   display: flex;
   justify-content: center;
@@ -106,11 +102,11 @@ header {
   font-size: 90%;
 }
 
-/* PRODUCTS */
 .products {
   display: flex;
   flex-wrap: wrap;
-  gap: 3%;
+  gap: 4%;
+  justify-content: center;
   margin-top: 3%;
 }
 
@@ -118,14 +114,19 @@ header {
   background-color: #1e1e1e;
   border: 1px solid #2e2e2e;
   width: 22%;
-  min-width: 180px;
-  padding: 2%;
+  min-width: 200px;
+  padding: 3%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .product h3 {
@@ -136,7 +137,6 @@ header {
   font-size: 90%;
 }
 
-/* INFO SECTION */
 .info-section {
   display: flex;
   align-items: center;
@@ -166,7 +166,6 @@ header {
   font-size: 100%;
 }
 
-/* FOOTER */
 footer {
   background-color: #0f0f0f;
   border-top: 1px solid #2e2e2e;
@@ -174,22 +173,23 @@ footer {
   text-align: center;
 }
 
-/* TILLBEHÖR */
 .tillbehor-boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 3%;
+  gap: 4%;
+  justify-content: center;
 }
 
 .tillbehor-item {
   width: 22%;
-  min-width: 180px;
-  padding: 2%;
+  min-width: 200px;
+  padding: 3%;
+  text-align: center;
 }
 
 .tillbehor-square {
   width: 100%;
-  height: 160px; /* ersätter aspect-ratio */
+  height: 180px;
   background-color: #1e1e1e;
   border: 1px solid #2e2e2e;
 }
@@ -200,11 +200,19 @@ footer {
   object-fit: cover;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVE */
-/* ========================= */
+.tillbehor-item h3 {
+  font-size: 110%;
+}
 
-/* TABLET */
+.tillbehor-item p {
+  font-size: 90%;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
 @media (max-width: 1024px) {
   .product,
   .tillbehor-item {
@@ -222,11 +230,10 @@ footer {
 
   .big-rect {
     width: 60%;
-    height: 60vw; /* håller formen utan aspect-ratio */
+    height: 60vw;
   }
 }
 
-/* MOBILE */
 @media (max-width: 600px) {
   .nav-bar {
     display: none;
