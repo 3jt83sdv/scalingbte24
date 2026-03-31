@@ -210,6 +210,13 @@ main {
   font-size: 110%;
   margin-top: 8px;
 }
+.tillbehor-section {
+  padding: 40px 5%;
+}
+
+.tillbehor-section h1 {
+  margin-bottom: 30px;
+}
 
 .tillbehor-item p {
   font-size: 90%;
