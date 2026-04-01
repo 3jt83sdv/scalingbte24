@@ -26,8 +26,11 @@ header {
 
 .logo {
   font-size: 120%; 
-  
 } 
+.logo a {
+  text-decoration: none;
+  color: #e8e8e8;
+}
 
 .nav-bar {
   display: flex;
