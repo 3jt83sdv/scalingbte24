@@ -272,6 +272,62 @@ button {
 button:hover {
   background-color: #ccc;
 }
+.erbjudanden {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.erbjudanden h1 {
+  margin-bottom: 10px;
+}
+
+.erbjudanden p {
+  color: #fcfcfc;
+  margin-bottom: 20px;
+}
+
+.erbjudanden-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 5%;
+  margin-bottom: 40px;
+}
+
+.erbjudande {
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  width: 200px; 
+  padding: 15px;
+  text-align: center;
+}
+
+.erbjudande img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.erbjudande h3 {
+  font-size: 110%;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.new-price {
+  font-weight: bold;
+}
+
+.erbjudande:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
 
 @media (max-width: 1024px) {
   .info-section {
@@ -287,10 +343,12 @@ button:hover {
 
 } 
 
-
 @media (max-width: 600px) {
   .nav-bar {
     display: none;
+  }
+  .erbjudande {
+    width: 100%;
   }
   .contact {
     width: 90%;
