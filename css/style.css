@@ -166,7 +166,6 @@ main {
   flex-wrap: wrap;
 }
 
-/* Varannan sektion speglas */
 .info-section:nth-child(even) {
   flex-direction: row-reverse;
 }
