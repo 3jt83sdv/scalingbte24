@@ -231,6 +231,47 @@ footer p {
   font-size: 13px;
   color: #ffffff;
 }
+.contact {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact h1 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  color: #e8e8e8;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: #e8e8e8;
+  color: #141414;
+  border: none;
+} 
+button:hover {
+  background-color: #ccc;
+}
 
 @media (max-width: 1024px) {
   .info-section {
@@ -243,7 +284,8 @@ footer p {
     flex-direction: column;
   }
 
-}
+} 
+
 
 @media (max-width: 600px) {
   .nav-bar {
