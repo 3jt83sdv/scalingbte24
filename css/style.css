@@ -161,14 +161,6 @@ main {
   flex-direction: row-reverse;
 }
 
-.big-rect {
-  width: 280px;
-  height: 280px;
-  background-color: #1e1e1e;
-  border: 1px solid #2e2e2e;
-  flex-shrink: 0;
-}
-
 .info-text h2 {
   font-size: 150%;
   margin-bottom: 10px;
@@ -176,7 +168,7 @@ main {
 
 .info-text p {
   font-size: 100%;
-  color: #888;
+  color: #ffffff;
 }
 
 .tillbehor-boxes {
@@ -220,7 +212,7 @@ main {
 
 .tillbehor-item p {
   font-size: 90%;
-  color: #888;
+  color: #ffffff;
 }
 
 footer {
@@ -237,7 +229,7 @@ footer {
 
 footer p {
   font-size: 13px;
-  color: #888;
+  color: #ffffff;
 }
 
 @media (max-width: 1024px) {
@@ -251,10 +243,6 @@ footer p {
     flex-direction: column;
   }
 
-  .big-rect {
-    width: 60%;
-    height: 300px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -276,8 +264,4 @@ footer p {
     align-items: center;
   }
 
-  .big-rect {
-    width: 90%;
-    height: 250px;
-  }
 }
