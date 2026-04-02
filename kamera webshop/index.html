@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CatchYourMoments</title>
+  <title lang="en">CatchYourMoments</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header>
   <div class="header-inner">
-    <div class="logo">CatchYourMoments</div>
-    <nav class="nav-bar">
+    <div class="logo"><a href="index.html">CatchYourMoments</a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-bar" id="nav-menu">
       <a href="index.html">Hem</a>
       <a href="kameror.html">Kameror</a>
       <a href="objektiv.html">Objektiv</a>
       <a href="tillbehor.html">Tillbehör</a>
-      <a href="#">Erbjudanden</a>
-      <a href="#">Kontakt</a>
+      <a href="erbjudanden.html">Erbjudanden</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
   </div>
 </header>
+<div class="fixed-back"></div>
 
 <div class="container">
   <aside class="sidebar-left"></aside>
@@ -33,21 +35,21 @@
       <div class="top-boxes">
         <div class="top-item">
           <div class="square">
-            <img src="bilder/kamera.png" alt="kamera">
+            <img src="bilder/kamera.png" alt="Svart kamera på ett bord">
           </div>
           <p>Spegellösa & DSLR</p>
         </div>
 
         <div class="top-item">
           <div class="square">
-            <img src="bilder/zooming.jpg" alt="zooming">
+            <img src="bilder/zooming.jpg" alt="En person med ett kamerastativ som fotar solnedgången med våra produkter">
           </div>
-          <p>Prime & Zoom</p>
+          <p lang="en">Prime & Zoom</p>
         </div>
 
         <div class="top-item">
           <div class="square">
-            <img src="bilder/kameraTillbehör.png" alt="KameraTillbehör">
+            <img src="bilder/kameraTillbehör.png" alt="Väska som innehåller kamera,mobil,drone,extern blixt och hörlurar">
           </div>
           <p>Väskor & stativer</p>
         </div>
@@ -55,7 +57,7 @@
     </section>
 
     <section class="info-section"> 
-      <a href="erbjudande">
+      <a href="erbjudanden.html">
         <img src="bilder/deal.png" alt="deal"> 
       </a>
         
@@ -66,7 +68,7 @@
     </section>
 
     <section class="info-section">
-      <a href="Nyheter">
+      <a href="erbjudanden.html">
         <img src="bilder/nyhet.png" alt="Nyheter">
       </a>
       <div class="info-text">
@@ -76,12 +78,12 @@
     </section>
 
     <section class="info-section">
-      <a href="kameraGuide">
+      <a href="kontakt.html">
         <img src="bilder/kameraguide.png" alt="KameraGuide">
       </a>
       <div class="info-text">
-        <h2>Expertguider</h2>
-        <p>Vi hjälper dig hitta rätt utrustning.</p>
+        <h2>Tjänster</h2>
+        <p>Boka tjänster genom att kontakta oss</p>
       </div>
     </section>
 
@@ -92,13 +94,15 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand">CatchYourMoments</div>
+    <div class="footer-brand" lang="en">CatchYourMoments</div>
     <p>Storgatan 12, Trollhättan</p>
     <p>0520-123 456</p>
     <p>Mån-Fre 10-18 | Lör 11-15</p>
     <p>Fri frakt över 499 kr</p>
   </div>
 </footer>
+
+<script src="../js/script.js"></script>
 
 </body>
 </html>
