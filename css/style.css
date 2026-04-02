@@ -147,7 +147,7 @@ main {
   margin-bottom: 10px;
 }
 
-.product h3 {
+.product h2 {
   font-size: 110%;
 }
 
@@ -212,7 +212,7 @@ main {
   object-fit: cover;
 }
 
-.tillbehor-item h3 {
+.tillbehor-item h2 {
   font-size: 110%;
   margin-top: 8px;
 }
@@ -325,7 +325,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.erbjudande h3 {
+.erbjudande h2 {
   font-size: 110%;
 }
 
@@ -341,6 +341,12 @@ button:hover {
 .erbjudande:hover {
   transform: scale(1.03);
   transition: 0.2s;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #e8e8e8;
 }
 
 @media (max-width: 1024px) {
@@ -367,6 +373,9 @@ button:hover {
   .contact {
     width: 90%;
   }
+  .hamburger {
+    display: block;
+  }
 
   .container {
     grid-template-columns: 100%;
@@ -380,6 +389,22 @@ button:hover {
   .top-boxes {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    border-bottom: 1px solid #2e2e2e;
+  }
+
+  .nav-bar.open {
+    display: flex;
   }
 
 }
